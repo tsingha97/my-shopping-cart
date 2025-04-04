@@ -1,0 +1,214 @@
+/* Reset and basic styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1,
+h2 {
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+/* Products Section */
+.products {
+  margin-bottom: 2rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.product-card p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Add to Cart Button */
+.add-button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+/* Cart Summary */
+.cart-summary {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border: 1px solid #dedede;
+  border-radius: 8px;
+}
+
+.cart-summary p {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+  width: 100%;
+  height: 12px;
+  background-color: #ddd;
+  border-radius: 6px;
+  margin-bottom: 0.8rem;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #0077ff;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+/* Free Gift Message */
+.free-gift-message {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 0.6rem;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Cart Items */
+.cart-items {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border: 1px solid #dedede;
+  border-radius: 8px;
+}
+
+.cart-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e9ecef;
+  padding: 0.8rem 0;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item > div {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Cart Item Controls */
+.cart-item-controls {
+  display: flex;
+  align-items: center;
+}
+
+.plus-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.plus-button:hover {
+  background-color: #218838;
+}
+
+.minus-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.minus-button:hover {
+  background-color: #c82333;
+}
+
+.item-quantity {
+  margin: 0 0.5rem;
+  min-width: 20px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Remove Button */
+.remove-button {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.remove-button:hover {
+  background-color: #e60000;
+}
+
+/* Free Gift Label */
+.free-gift-label {
+  margin-left: 0.5rem;
+  font-style: italic;
+  color: #28a745;
+}
