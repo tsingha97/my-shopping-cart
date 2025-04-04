@@ -3,7 +3,7 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/tsingha97/my-shopping-cart.git
 cd my-shopping-cart
 ```
 
